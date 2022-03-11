@@ -14,6 +14,9 @@ dotenv.config();
 // Connection to mongo
 database();
 
+// Setup Command Bus
+commandBus;
+
 // Able to get JSON by body
 app.use(express.json());
 
@@ -23,6 +26,10 @@ app.use("/", (req, res, next) => {
   // Checking session
   next();
 });
+
+// Master endpoints in this server
+app.use("/users", userRouter);
+app.use("/auth", authRouter);
 
 // Starting the web server
 app.listen(process.env.API_PORT, () => {
