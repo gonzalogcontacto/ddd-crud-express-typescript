@@ -1,4 +1,4 @@
-# 🕸 Hexagonal Architecture, DDD &amp; CQRS in TypeScript 🕸
+   # 🕸 Hexagonal Architecture, DDD &amp; CQRS in TypeScript 🕸
 Example of a TypeScript application following Domain-Driven Design (DDD) and Command Query Responsibility Segregation (CQRS).
 API is express based and it is consuming service user.
 
@@ -20,7 +20,7 @@ const commandHandlerMiddleware = new CommandHandlerMiddleware(
 Each Service like user (/src/core/user) define and implement the expected Command Handlers to manage actions requested by the API layer.
 This Service Providers decided the expected Infra to use like MongooseUserRespository.ts mantaining a contract with Application Layer defined at Domain Layer (UserRespository.ts).
 
-##### 📝 Next Steps
+## 📝 Next Steps
 * Implement QueryBus and QueryCommands
 * Implement EventBus like RabbitMQ to send Domain Events
 * Store Domain Events at Databases
