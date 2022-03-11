@@ -20,7 +20,7 @@ const commandHandlerMiddleware = new CommandHandlerMiddleware(
 Each Service like user (/src/core/user) define and implement the expected Command Handlers to manage actions requested by the API layer.
 This Service Providers decided the expected Infra to use like MongooseUserRespository.ts mantaining a contract with Application Layer defined at Domain Layer (UserRespository.ts).
 
-## 📝 Next Steps
+## 📝 Next Steps 📝
 * Implement QueryBus and QueryCommands
 * Implement EventBus like RabbitMQ to send Domain Events
 * Store Domain Events at Databases
