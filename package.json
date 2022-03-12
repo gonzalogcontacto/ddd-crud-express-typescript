@@ -1,0 +1,40 @@
+{
+  "name": "node-express-api-ts",
+  "version": "1.0.0",
+  "description": "Usar sequelize como ORM de NODE, en typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "nodejs",
+    "typscript",
+    "sequelize",
+    "express"
+  ],
+  "author": "gonzalogcontacto@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@types/multer": "^1.4.4",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.5",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "simple-command-bus": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.9",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.14.8",
+    "nodemon": "^2.0.6",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.5"
+  }
+}
