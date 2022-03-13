@@ -1,13 +1,14 @@
-import { Model } from "sequelize/types";
-import { User } from "../../domain/User";
 import { UserRepository } from "../../domain/UserRepository";
 import { UserDto } from "../../domain/UserDto";
+import { EventBus } from "../../../event/domain/EventBus";
 
 export class UserCreator {
   userRepository;
+  eventBus;
 
-  constructor(userRepository: UserRepository) {
+  constructor(userRepository: UserRepository, eventBus: EventBus) {
     this.userRepository = userRepository;
+    this.eventBus = eventBus;
   }
 
   async invoke(user: UserDto) {
