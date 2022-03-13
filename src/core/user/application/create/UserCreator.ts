@@ -1,6 +1,7 @@
 import { UserRepository } from "../../domain/UserRepository";
 import { UserDto } from "../../domain/UserDto";
-import { EventBus } from "../../../event/domain/EventBus";
+import { EventBus } from "../../../../shared/domain/EventBus";
+import { DomainEvent } from "../../../../shared/domain/DomainEvent";
 
 export class UserCreator {
   userRepository;
@@ -13,7 +14,14 @@ export class UserCreator {
 
   async invoke(user: UserDto) {
     try {
-      return await this.userRepository.create(user);
+      const userCreated = await this.userRepository.create(user);
+      //const userCreatedEventDomain = new DomainEvent("USER_CREATED");
+
+      this.eventBus.publish(["USER_CREATED"]);
+
+      return new Promise((resolve) => {
+        resolve(userCreated);
+      });
     } catch (e) {
       throw new Error("Error creating User");
     }
