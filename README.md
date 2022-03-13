@@ -8,6 +8,7 @@ API is express based and it is consuming service user.
 - Express: Like API Framework
 - Mongoose ODM at the API
 - MongoDB: DB system
+- RabbitMQ as EventBus
 - A Simple Command Bus Implementation for NodeJS: [GitHub](https://github.com/erickjth/simple-command-bus#readme)
   It is majorly inspired by Tactician Command Bus for PHP https://tactician.thephpleague.com/
 
@@ -34,7 +35,7 @@ This Service Providers decided the expected Infra to use like MongooseUserRespos
 ## 📝 Next Steps 📝
 
 - Implement QueryBus and QueryCommands
-- Implement EventBus like RabbitMQ to send Domain Events
+- Subscribe Ecommerce Service to User Domain Events at the implemented EventBus (RabbitMQ)
 - Store Domain Events at Databases
 - Implement Observability with ELK
 - Implement Docker environment
