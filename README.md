@@ -1,4 +1,6 @@
 # 🕸 Hexagonal Architecture, DDD &amp; CQRS in TypeScript 🕸
+[![Maintainability](https://api.codeclimate.com/v1/badges/3251dea564b4a4ea5aae/maintainability)](https://codeclimate.com/github/gonzalogcontacto/ddd-crud-express-typescript/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3251dea564b4a4ea5aae/test_coverage)](https://codeclimate.com/github/gonzalogcontacto/ddd-crud-express-typescript/test_coverage)
 
 Example of a TypeScript application following Domain-Driven Design (DDD) and Command Query Responsibility Segregation (CQRS).
 API is express based and it is consuming service user.
