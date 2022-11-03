@@ -4,7 +4,9 @@
   "description": "Usar sequelize como ORM de NODE, en typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
+    "test:e2e": "./node_modules/.bin/cucumber-js -p default",
+    "test:watch": "jest --watch",
     "dev": "nodemon"
   },
   "keywords": [
@@ -22,23 +24,32 @@
     "body-parser": "^1.19.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.1",
+    "jest": "^29.2.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.5",
     "multer": "^1.4.2",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5",
     "simple-command-bus": "^1.0.7",
+    "supertest": "^6.3.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/amqplib": "^0.8.2",
     "@types/bcrypt": "^5.0.0",
+    "@types/cucumber": "^7.0.0",
     "@types/express": "^4.17.9",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/node": "^14.14.8",
+    "@types/supertest": "^2.0.12",
     "@types/uuid": "^8.3.4",
+    "cucumber": "^6.0.7",
+    "cucumber-pretty": "^6.0.1",
+    "cucumber-tsflow": "^4.0.0-rc.7",
     "nodemon": "^2.0.6",
-    "ts-node-dev": "^1.0.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^4.0.5"
   }
 }
