@@ -1,6 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { AfterAll, BeforeAll } from "cucumber";
+import { AfterAll, BeforeAll } from "@cucumber/cucumber";
 /* import { ConfigureRabbitMQCommand } from "../../../../../../src/apps/mooc/backend/command/ConfigureRabbitMQCommand";
 import container from "../../../../../../src/apps/mooc/backend/dependency-injection";
 import { MoocBackendApp } from "../../../../../../src/apps/mooc/backend/MoocBackendApp";
