@@ -1,4 +1,4 @@
-import { UserServiceProvider } from "../../src/core/user/UserServiceProvider";
+import { UserServiceProvider } from "../../../src/backoffice/user/UserServiceProvider";
 
 const {
   Command,
