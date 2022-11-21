@@ -1,11 +1,14 @@
-# 🕸 Hexagonal Architecture, DDD &amp; CQRS in TypeScript 🕸
+# 🕸 Hexagonal Architecture, DDD &amp; CQRS in TypeScript 
 [![Maintainability](https://api.codeclimate.com/v1/badges/3251dea564b4a4ea5aae/maintainability)](https://codeclimate.com/github/gonzalogcontacto/ddd-crud-express-typescript/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3251dea564b4a4ea5aae/test_coverage)](https://codeclimate.com/github/gonzalogcontacto/ddd-crud-express-typescript/test_coverage)
 
 Example of a TypeScript application following Domain-Driven Design (DDD) and Command Query Responsibility Segregation (CQRS).
 API is express based and it is consuming service user.
 
-## ⚒️ Tooling Usage ⚒️
+![Alt](https://repobeats.axiom.co/api/embed/e16d846543941a2607f7f5bec8b190c7ad49c9d0.svg "Repobeats analytics image")
+
+
+## ⚒️ Tooling Usage
 
 - Express: Like API Framework
 - Mongoose ODM at the API
@@ -14,7 +17,7 @@ API is express based and it is consuming service user.
 - A Simple Command Bus Implementation for NodeJS: [GitHub](https://github.com/erickjth/simple-command-bus#readme)
   It is majorly inspired by Tactician Command Bus for PHP https://tactician.thephpleague.com/
 
-## 🚎 CQRS Implementation 🚎
+## 🚎 CQRS Implementation
 
 Applications like Api (/api) and Services like User (/src/core/user) are in communication throw synchronous Commandbus at Api layer where it call to ServiceProvider's to get Handlers of each Service implemented on API.
 
